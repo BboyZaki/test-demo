@@ -9,7 +9,7 @@ const config = {
   url: 'https://BboyZaki.github.io',
   baseUrl: '/',
   organizationName: 'BboyZaki',
-  projectName: 'test-demo',
+  projectName: 'BboyZaki.github.io',
   deploymentBranch: 'gh-pages',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'throw',

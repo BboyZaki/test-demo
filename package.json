@@ -1,0 +1,22 @@
+{
+  "name": "test-demo",
+  "version": "1.0.0",
+  "description": "a project for test everything",
+  "main": "index.js",
+  "scripts": {
+    "docs:deps": "cd website && npm install",
+    "docs:start": "cd website && npm start",
+    "docs:build": "cd website && npm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BboyZaki/test-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BboyZaki/test-demo/issues"
+  },
+  "homepage": "https://github.com/BboyZaki/test-demo#readme"
+}

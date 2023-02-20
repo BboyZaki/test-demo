@@ -1,8 +1,6 @@
 name: Build Website
 on:
   push:
-    paths:
-      - 'website/**'
     branches:
       - main
 

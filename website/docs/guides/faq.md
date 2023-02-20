@@ -7,7 +7,7 @@
 1. 首先明确我们编译目标为微信小程序，需要在 `mor.config.ts` 配置中添加编译为微信的配置，其中 `target` 值设置为 `wechat`（配置参考 [MorJS 基础 - 配置 - target - 编译目标平台](/guides/basic/config#target---编译目标平台)）
 2. 给这份配置起一个配置名字，比如叫做 `wechat` ，把 `name` 设置为 `wechat`，其他配置可与基础配置相同保持不变
 3. `package.json` 的 `script` 中添加编译为微信的命令 `"dev:wechat": "mor compile -w --name wechat"`
-4. 终端运行 `tnpm run dev:wechat`，产物 `dist/wechat` 即为编译成微信的产物，用微信 IDE 打开即可
+4. 终端运行 `npm run dev:wechat`，产物 `dist/wechat` 即为编译成微信的产物，用微信 IDE 打开即可
 
 > 更多具体配置项可查阅 [MorJS 基础 - 配置](/guides/basic/config)
 

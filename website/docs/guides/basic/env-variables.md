@@ -25,7 +25,7 @@ $ set PORT=3000&&mor compile --target web
 如果需要同时在不同的操作系统中使用环境变量，推荐使用工具 [cross-env](https://github.com/kentcdodds/cross-env)
 
 ```bash
-$ tnpm install cross-env -D
+$ npm install cross-env -D
 $ cross-env PORT=3000 mor compile --target web
 ```
 

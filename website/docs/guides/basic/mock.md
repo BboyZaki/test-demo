@@ -253,7 +253,7 @@ export default defineConfig([
           // 参数②: 提供 adapter 的参数
           {
             type: 'pickpost',
-            api: 'https://apistudio.alibaba-inc.com/mock/mtop/ele-recommend-price/'
+            api: 'https://www.abc.com/def/'
           }
         ],
       ],
@@ -326,7 +326,7 @@ export default defineConfig([
           // 参数②: 提供 adapter 的参数
           {
             type: 'pickpost',
-            api: 'https://apistudio.alibaba-inc.com/mock/mtop/ele-recommend-price/'
+            api: 'https://www.abc.com/def/'
           }
         ],
       ],
@@ -348,7 +348,7 @@ export default class MtopAdapter {
     const { apiName, apiArguments, mockContext, originalGlobal } = runOptions
     const {
       type, // pickpost
-      api // https://apistudio.alibaba-inc.com/mock/mtop/ele-recommend-price/
+      api // https://www.abc.com/def/
     } = this.options || {}
     // 执行相关逻辑 获取最终结果 result
     return result

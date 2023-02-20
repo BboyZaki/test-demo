@@ -16,7 +16,7 @@
 首选需要安装构建相关依赖
 
 ```shell
-tnpm install
+npm install
 ```
 
 ## 启动
@@ -24,7 +24,7 @@ tnpm install
 安装好依赖之后，在本地执行如下命令启动文档站点：
 
 ```shell
-tnpm run start
+npm run start
 ```
 
 本地服务启动后，可通过 <http://localhost:8000> 预览站点文档。
@@ -37,7 +37,7 @@ tnpm run start
 
 - **文档（docs）**: docs/日期\_英文描述，例：feature/20221130_add_analyze_config
 
-完成代码提交后，需要在 <https://code.alibaba-inc.com/mor/mor-site> 中提交代码评审，评审的目标分支为评审分支创建时基于的分支。
+完成代码提交后，需要在 <https://github.com/mor/mor-site> 中提交代码评审，评审的目标分支为评审分支创建时基于的分支。
 
 ### Commit 规范
 

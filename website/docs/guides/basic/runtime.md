@@ -17,7 +17,7 @@
 
 ### 安装与使用
 
-1. 安装依赖: `tnpm install @morjs/core --save`
+1. 安装依赖: `npm install @morjs/core --save`
 2. 引用依赖:
 
 - 支付宝 DSL: `import { aApp, aPage, aComponent } from '@morjs/core'`

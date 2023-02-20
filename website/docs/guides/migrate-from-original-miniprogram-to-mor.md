@@ -16,7 +16,7 @@ v12.13.0
 > 如果不存在 `package.json`，建议在安装依赖前，先执行 `npm init --yes` 生成 `package.json` 文件。
 
 - 步骤一：进入小程序项目根目录：`cd your_project_dir`
-- 步骤二：添加 MorJS 必要的依赖：`tnpm i @morjs/cli -D && tnpm i @morjs/core --save`
+- 步骤二：添加 MorJS 必要的依赖：`npm i @morjs/cli -D && npm i @morjs/core --save`
 
 ```diff
 {
@@ -123,7 +123,7 @@ export default defineConfig([
 
 ```bash
 # 项目根目录执行命令 👇
-tnpm run dev # 即 mor compile -w
+npm run dev # 即 mor compile -w
 ```
 
 执行命令后的效果如下：

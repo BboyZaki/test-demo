@@ -12,7 +12,7 @@
 
 ### 使用工程插件
 
-- 工程插件需要先安装依赖 `tnpm install @morjs/cli-plugin-xxx -D`
+- 工程插件需要先安装依赖 `npm install @morjs/cli-plugin-xxx -D`
 - 在 `mor.config.ts` 配置文件中进行引入，并加入到配置项 `plugins` 中即可
 - 原 `MorJS 1` 相关工程插件，在引入后需要加入到配置项 `compatible` 中，详情可参考 [MorJS 基础- 配置 - compatible](/guides/basic/config#compatible)
 
@@ -71,7 +71,7 @@ aApp(
 1. 全局安装 mor cli 工具
 
 ```bash
-tnpm i @morjs/cli -g
+npm i @morjs/cli -g
 ```
 
 2. 通过 mor cli 工具创建项目
@@ -103,7 +103,7 @@ mor init
 ✔ 请输入项目名称 … myapp
 ✔ 请输入项目描述 … my first plugin
 ✔ 用户名 … 致康
-✔ 邮箱 … zhikangliu.lzk@alibaba-inc.com
+✔ 邮箱 … zhikangliu.lzk@github.com
 ✔ 请输入 Git 仓库地址 …
 ```
 
@@ -148,7 +148,7 @@ export default defineConfig([
 1. 全局安装 mor cli 工具
 
 ```bash
-tnpm i @morjs/cli -g
+npm i @morjs/cli -g
 ```
 
 2. 通过 mor cli 工具创建项目
@@ -180,7 +180,7 @@ mor init
 ✔ 请输入项目名称 … myapp
 ✔ 请输入项目描述 … my first runtime plugin
 ✔ 用户名 … 致康
-✔ 邮箱 … zhikangliu.lzk@alibaba-inc.com
+✔ 邮箱 … zhikangliu.lzk@github.com
 ✔ 请输入 Git 仓库地址 …
 ```
 
@@ -225,7 +225,7 @@ aApp(
 1. 全局安装 mor cli 工具
 
 ```bash
-tnpm i @morjs/cli -g
+npm i @morjs/cli -g
 ```
 
 2. 通过 mor cli 工具创建项目
@@ -257,6 +257,6 @@ mor init
 ✔ 请输入项目名称 … myapp
 ✔ 请输入项目描述 … my first runtime solution
 ✔ 用户名 … 致康
-✔ 邮箱 … zhikangliu.lzk@alibaba-inc.com
+✔ 邮箱 … zhikangliu.lzk@github.com
 ✔ 请输入 Git 仓库地址 …
 ```

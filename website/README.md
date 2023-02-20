@@ -4,9 +4,9 @@
 
 站点采用 [Docusaurus 2](https://docusaurus.io/) 框架，要求 node 版本 >=16.14
 
-- Installation: `$ tnpm install`
-- Development: `$ tnpm run start`
-- Build: `$ tnpm run build`
+- Installation: `$ npm install`
+- Development: `$ npm run start`
+- Build: `$ npm run build`
 - Version: `npx docusaurus docs:version 1.1.0`
 
 > 发完版本号 Version 后需要修改一下 `docusaurus.config.js` 配置文件的 `onlyIncludeVersions` 相关配置项

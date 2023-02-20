@@ -1251,12 +1251,12 @@ _注意: 如开启了小程序独立分包模式, 该共享方式可能会失效
 
     // 通过 git 仓库配置宿主
     // 支持直接配置链接, 如:
-    //   git: 'git@code.aone.alibaba-inc.com:abc/cde.git#master'
+    //   git: 'git@github.com:abc/cde.git#master'
     //
     // 注意: branch/tag/commit 的优先级为 commit > tag > branch, 相关字段均配置后，会按照优先级取用
     git: {
       // 仓库地址, 支持 git/http/https/ssh 协议链接
-      url: 'git@code.aone.alibaba-inc.com:abc/cde.git',
+      url: 'git@github.com:abc/cde.git',
       // 分支配置, 默认为 HEAD
       branch: 'develop',
       // 标签配置
@@ -1285,16 +1285,16 @@ _注意: 如开启了小程序独立分包模式, 该共享方式可能会失效
 
     // 通过 file 配置宿主(复制)
     // 直接支持配置地址, 如:
-    //   file: '/Users/eleme/Workspace/yourCustomHostPath'
+    //   file: '/Users/yourHomeDir/Workspace/yourCustomHostPath'
     file: {
-      path: '/Users/eleme/Workspace/yourCustomHostPath'
+      path: '/Users/yourHomeDir/Workspace/yourCustomHostPath'
     },
 
     // 通过 link 配置宿主(软链)
     // 直接支持配置地址, 如:
-    //   link: '/Users/eleme/Workspace/yourCustomHostPath'
+    //   link: '/Users/yourHomeDir/Workspace/yourCustomHostPath'
     link: {
-      path: '/Users/eleme/Workspace/yourCustomHostPath'
+      path: '/Users/yourHomeDir/Workspace/yourCustomHostPath'
     },
 
     // 构建产物目录配置, 默认为 `dist`
@@ -1316,7 +1316,7 @@ _注意: 如开启了小程序独立分包模式, 该共享方式可能会失效
       // 模块编译或拷贝前执行脚本, 可选配置
       before: [
         // 可以直接以字符串的方式配置命令
-        'tnpm i',
+        'npm i',
 
         // 也可以以对象的方式配置
         {
@@ -1345,7 +1345,7 @@ _注意: 如开启了小程序独立分包模式, 该共享方式可能会失效
 
     // 模块配置信息, 对应 app.json 的内容
     // 该文件的配置方式，可以参见下方链接中有关 app.json 的描述
-    // => https://mor.alibaba-inc.com/guides/basic/config#compiletype
+    // => https://mor.eleme.io/guides/basic/config#compiletype
     // 配置缺省状态下，集成时 mor 会自动读取 dist 配置所指向目录中对应的文件
     config: undefined
   }
@@ -1383,12 +1383,12 @@ _注意: 如开启了小程序独立分包模式, 该共享方式可能会失效
 
       // 通过 git 仓库配置模块
       // 支持直接配置链接, 如:
-      //   git: 'git@code.aone.alibaba-inc.com:abc/cde.git#master'
+      //   git: 'git@github.com:abc/cde.git#master'
       //
       // 注意: branch/tag/commit 的优先级为 commit > tag > branch, 相关字段均配置后，会按照优先级取用
       git: {
         // 仓库地址, 支持 git/http/https/ssh 协议链接
-        url: 'git@code.aone.alibaba-inc.com:abc/cde.git',
+        url: 'git@github.com:abc/cde.git',
         // 分支配置, 默认为 HEAD
         branch: 'develop',
         // 标签配置
@@ -1417,16 +1417,16 @@ _注意: 如开启了小程序独立分包模式, 该共享方式可能会失效
 
       // 通过 file 配置模块(复制)
       // 直接支持配置地址, 如:
-      //   file: '/Users/eleme/Workspace/yourCustomModulePath'
+      //   file: '/Users/yourHomeDir/Workspace/yourCustomModulePath'
       file: {
-        path: '/Users/eleme/Workspace/yourCustomModulePath'
+        path: '/Users/yourHomeDir/Workspace/yourCustomModulePath'
       },
 
       // 通过 link 配置模块(软链)
       // 直接支持配置地址, 如:
-      //   link: '/Users/eleme/Workspace/yourCustomModulePath'
+      //   link: '/Users/yourHomeDir/Workspace/yourCustomModulePath'
       link: {
-        path: '/Users/eleme/Workspace/yourCustomModulePath'
+        path: '/Users/yourHomeDir/Workspace/yourCustomModulePath'
       },
 
       // 构建产物目录配置, 默认为 `dist`
@@ -1448,7 +1448,7 @@ _注意: 如开启了小程序独立分包模式, 该共享方式可能会失效
         // 模块编译或拷贝前执行脚本, 可选配置
         before: [
           // 可以直接以字符串的方式配置命令
-          'tnpm i',
+          'npm i',
 
           // 也可以以对象的方式配置
           {
@@ -1477,7 +1477,7 @@ _注意: 如开启了小程序独立分包模式, 该共享方式可能会失效
 
       // 模块配置信息, 对应 subpackage.json / plugin.json / app.json 的内容
       // 三种类型文件的配置方式，可以参见下方链接中的描述
-      // => https://mor.alibaba-inc.com/guides/basic/config#compiletype
+      // => https://mor.eleme.io/guides/basic/config#compiletype
       // 配置缺省状态下，集成时 mor 会自动读取 dist 配置所指向目录中对应的文件
       config: undefined
     }

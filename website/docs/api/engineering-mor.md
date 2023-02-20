@@ -33,7 +33,7 @@ postcss 插件
 - `g`: rgb 色值区域中的 green
 - `b`: rgb 色值区域中的 blue
 
-## setNPMBinPATH(projectPath, env)
+## senpmBinPATH(projectPath, env)
 
 设置 NPM .bin 路径以复用 npm bin 文件
 

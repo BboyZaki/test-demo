@@ -88,7 +88,7 @@ export default defineConfig([
 ]
 ```
 
-如果你 `tnpm run dev` 命令行没有关闭的话，你会发现 `dist/` 下多出来一份 `dist/bytedance` 的文件，恭喜你完成了字节(抖音)端的小程序编译构建，这就是用于抖音端的开发产物啦~ 🎉 🎉 🎉
+如果你 `npm run dev` 命令行没有关闭的话，你会发现 `dist/` 下多出来一份 `dist/bytedance` 的文件，恭喜你完成了字节(抖音)端的小程序编译构建，这就是用于抖音端的开发产物啦~ 🎉 🎉 🎉
 
 ## 实作页面组件
 

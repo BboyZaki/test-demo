@@ -55,7 +55,7 @@ title: Takin 介绍
 ```typescript
 /**
  * 0. 从安装 takin 作为依赖, 并新建一个 index.ts 开始
- *    执行命令: tnpm i takin --save
+ *    执行命令: npm i takin --save
  *    执行命令: touch index.ts
  */
 

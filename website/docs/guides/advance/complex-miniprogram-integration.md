@@ -161,12 +161,12 @@ export default defineConfig([
 
   /* 通过 git 仓库配置模块下载 */
   // 字符串方式配置，如:
-  git: 'git@code.aone.alibaba-inc.com:abc/cde.git#master'
+  git: 'git@github.com:abc/cde.git#master'
   // 对象方式配置，如：
   // 注意: branch/tag/commit 的优先级为 commit > tag > branch, 相关字段均配置后，会按照优先级取用
   git: {
     // 仓库地址, 支持 git/http/https/ssh 协议链接
-    url: 'git@code.aone.alibaba-inc.com:abc/cde.git',
+    url: 'git@github.com:abc/cde.git',
     // 分支配置, 默认为 HEAD
     branch: 'develop',
     // 标签配置
@@ -186,18 +186,18 @@ export default defineConfig([
 
   /* 通过 link 配置（软链）模块下载 */
   // 字符串方式配置，如:
-  link: '/Users/eleme/Workspace/yourCustomHostPath',
+  link: '/Users/yourHomeDir/Workspace/yourCustomHostPath',
   // 对象方式配置，如：
   link: {
-    path: '/Users/eleme/Workspace/yourCustomHostPath'
+    path: '/Users/yourHomeDir/Workspace/yourCustomHostPath'
   },
 
   /* 通过 file 配置（复制）模块下载 */
   // 字符串方式配置，如:
-  file: '/Users/eleme/Workspace/yourCustomHostPath',
+  file: '/Users/yourHomeDir/Workspace/yourCustomHostPath',
   // 对象方式配置，如：
   file: {
-    path: '/Users/eleme/Workspace/yourCustomHostPath'
+    path: '/Users/yourHomeDir/Workspace/yourCustomHostPath'
   },
 
   // 构建产物目录配置, 默认为 `dist`
@@ -222,7 +222,7 @@ export default defineConfig([
     // 模块编译或拷贝前执行脚本, 可选配置
     before: [
       // 可以直接以字符串的方式配置命令
-      'tnpm i',
+      'npm i',
 
       // 也可以以对象的方式配置
       {
@@ -455,11 +455,11 @@ export default defineConfig([
       {
         name: 'miniapp-entry',
         git: {
-          url: 'git@gitlab.alibaba-inc.com:alsc-external-miniapps/miniapp-plugin-entry.git',
+          url: 'git@github.com:abc/miniapp-plugin-entry.git',
           branch: 'dev/dy_10.12.5'
         },
         scripts: {
-          before: ['tnpm i', 'npm run build:dy']
+          before: ['npm i', 'npm run build:dy']
         },
         dist: 'dist/dy'
       },
@@ -467,11 +467,11 @@ export default defineConfig([
       // 搜索分包
       {
         git: {
-          url: 'git@gitlab.alibaba-inc.com:eleme-ad/eleme-miniapp-plugin-search.git',
+          url: 'git@github.com:abc/eleme-miniapp-plugin-search.git',
           branch: 'feat/upgrade-to-mor-2'
         },
         scripts: {
-          before: ['tnpm i', 'cd plugin && tnpm i', 'mor compile --name dy']
+          before: ['npm i', 'cd plugin && npm i', 'mor compile --name dy']
         },
         dist: 'miniprogram_tt/dist'
       },
@@ -479,11 +479,11 @@ export default defineConfig([
       // 红包分包
       {
         git: {
-          url: 'git@gitlab.alibaba-inc.com:mini-foundation/vouchers.git',
+          url: 'git@github.com:abc/vouchers.git',
           branch: 'feature/dy'
         },
         scripts: {
-          before: ['tnpm i', 'cd plugin && tnpm i', 'mor compile --name dy']
+          before: ['npm i', 'cd plugin && npm i', 'mor compile --name dy']
         },
         dist: 'dist/bytedance'
       },
@@ -491,11 +491,11 @@ export default defineConfig([
       // 订单列表
       {
         git: {
-          url: 'git@gitlab.alibaba-inc.com:eleme/miniapp-plugin-orderlist.git',
+          url: 'git@github.com:abc/miniapp-plugin-orderlist.git',
           branch: 'dev/dy/10.12.5'
         },
         scripts: {
-          before: ['tnpm i', 'npm run build:dy']
+          before: ['npm i', 'npm run build:dy']
         },
         dist: 'build/_bytedance'
       },
@@ -503,11 +503,11 @@ export default defineConfig([
       // 平台(地址管理)
       {
         git: {
-          url: 'git@gitlab.alibaba-inc.com:alsc-mini-app/king-home-alipay.git',
+          url: 'git@github.com:abc/king-home-alipay.git',
           branch: 'feature/dy'
         },
         scripts: {
-          before: ['tnpm i', 'mor compile --name douyin_subpackage']
+          before: ['npm i', 'mor compile --name douyin_subpackage']
         },
         dist: 'dist'
       }
@@ -542,22 +542,22 @@ export default defineConfig([
         │ alsc-mini-app_king-home-alipay               │ feature/dy     │ 分包  │ 组合 │
         └──────────────────────────────────────────────┴────────────────┴──────┴──────┘
 [mor] ℹ 模块 eleme_miniapp-plugin-orderlist 前置脚本开始执行...
-[mor] ℹ 模块 eleme_miniapp-plugin-orderlist 执行命令: tnpm i
+[mor] ℹ 模块 eleme_miniapp-plugin-orderlist 执行命令: npm i
 [mor] ℹ 模块 alsc-mini-app_king-home-alipay 开始下载...
 [mor] ℹ 模块 eleme-ad_eleme-miniapp-plugin-search 前置脚本开始执行...
-[mor] ℹ 模块 eleme-ad_eleme-miniapp-plugin-search 执行命令: tnpm i
+[mor] ℹ 模块 eleme-ad_eleme-miniapp-plugin-search 执行命令: npm i
 [mor] ℹ 模块 mini-foundation_vouchers 前置脚本开始执行...
-[mor] ℹ 模块 mini-foundation_vouchers 执行命令: tnpm i
+[mor] ℹ 模块 mini-foundation_vouchers 执行命令: npm i
 [mor] ✔ 模块 alsc-mini-app_king-home-alipay 下载成功
 [mor] ℹ 模块 alsc-mini-app_king-home-alipay 前置脚本开始执行...
-[mor] ℹ 模块 alsc-mini-app_king-home-alipay 执行命令: tnpm i
+[mor] ℹ 模块 alsc-mini-app_king-home-alipay 执行命令: npm i
 [mor] ℹ 模块 eleme_miniapp-plugin-orderlist 执行命令: npm run build:dy
 [mor] ✔ 模块 eleme_miniapp-plugin-orderlist 前置脚本执行成功, 耗时: 27.440s
 [mor] ℹ 模块 alsc-mini-app_king-home-alipay 执行命令: mor compile --name douyin_subpackage
 [mor] ✔ 模块 alsc-mini-app_king-home-alipay 前置脚本执行成功, 耗时: 70.623s
-[mor] ℹ 模块 mini-foundation_vouchers 执行命令: cd plugin && tnpm i
+[mor] ℹ 模块 mini-foundation_vouchers 执行命令: cd plugin && npm i
 [mor] ℹ 模块 mini-foundation_vouchers 执行命令: mor compile --name dy
-[mor] ℹ 模块 eleme-ad_eleme-miniapp-plugin-search 执行命令: cd plugin && tnpm i
+[mor] ℹ 模块 eleme-ad_eleme-miniapp-plugin-search 执行命令: cd plugin && npm i
 [mor] ✔ 模块 mini-foundation_vouchers 前置脚本执行成功, 耗时: 93.399s
 [mor] ℹ 模块 eleme-ad_eleme-miniapp-plugin-search 执行命令: mor compile --name dy
 [mor] ✔ 模块 eleme-ad_eleme-miniapp-plugin-search 前置脚本执行成功, 耗时: 115.475s
@@ -708,11 +708,11 @@ export default defineConfig([
     // 配置插件宿主
     host: {
       git: {
-        url: 'http://gitlab.alibaba-inc.com/alsc-mini-app/king-home-alipay.git',
+        url: 'git@github.com:abc/king-home-alipay.git',
         branch: 'master'
       },
       scripts: {
-        before: ['tnpm i', 'tnpm run compile:ali']
+        before: ['npm i', 'npm run compile:ali']
       },
       dist: '_ali'
     },

@@ -88,7 +88,7 @@ export default defineConfig([
 ]
 ```
 
-如果你 `tnpm run dev` 命令行没有关闭的话，你会发现 `dist/` 下多出来一份 `dist/bytedance` 的文件，恭喜你完成了字节(抖音)端的小程序编译构建，这就是用于抖音端的开发产物啦~ 🎉 🎉 🎉
+如果你 `npm run dev` 命令行没有关闭的话，你会发现 `dist/` 下多出来一份 `dist/bytedance` 的文件，恭喜你完成了字节(抖音)端的小程序编译构建，这就是用于抖音端的开发产物啦~ 🎉 🎉 🎉
 
 ## 实作页面组件
 
@@ -434,9 +434,9 @@ aComponent({
 
 ## 多端部署
 
-之前我们通过 `tnpm run dev` 命令行开启了多端的编译及监听，若是改为 `tnpm run dev:wechat` 则是只开启对于微信端的编译及监听，从 package.json 中配置不难发现，其区别在于命令行多了一个 `--name wechat` 的配置，通过 [MorJS 基础 - 命令行](/guides/basic/cli) 可以查到 `--name` 用于指定配置名称，也就是我们配置文件 `mor.config.ts` 中的配置 name。
+之前我们通过 `npm run dev` 命令行开启了多端的编译及监听，若是改为 `npm run dev:wechat` 则是只开启对于微信端的编译及监听，从 package.json 中配置不难发现，其区别在于命令行多了一个 `--name wechat` 的配置，通过 [MorJS 基础 - 命令行](/guides/basic/cli) 可以查到 `--name` 用于指定配置名称，也就是我们配置文件 `mor.config.ts` 中的配置 name。
 
-通过 `tnpm run compile:prod` 命令行可对源码进行多端打包编译，不同于 dev 的是开启了生产模式编译构建，开启生产模式后会自动开启压缩支持，增加代码维度 context 条件编译、关闭 mock 等默认行为，同样若是改为 `tnpm run compile:prod:wechat` 则是只开启对于微信端的生产构建编译。
+通过 `npm run compile:prod` 命令行可对源码进行多端打包编译，不同于 dev 的是开启了生产模式编译构建，开启生产模式后会自动开启压缩支持，增加代码维度 context 条件编译、关闭 mock 等默认行为，同样若是改为 `npm run compile:prod:wechat` 则是只开启对于微信端的生产构建编译。
 
 默认产物目录 `dist` 下则是多端编译的产物结果，对输出产物目录进行修改有两种方式：
 

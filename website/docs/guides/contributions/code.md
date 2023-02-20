@@ -11,12 +11,12 @@ MorJS 使用 `monorepo` 的方式来管理仓库。
 首选需要安装构建相关依赖
 
 ```shell
-tnpm install
+npm install
 ```
 
 ## 启动
 
-请不要在`packages`中的库当中执行`tnpm install`，请在项目跟目录中执行以下命令。
+请不要在`packages`中的库当中执行`npm install`，请在项目跟目录中执行以下命令。
 
 ```shell
 npx lerna bootstrap
@@ -27,13 +27,13 @@ npx lerna bootstrap
 构建全部库请直接用
 
 ```shell
-tnpm run build
+npm run build
 ```
 
 想构建特定的库请用，然后根据列表来选择
 
 ```shell
-tnpm run build-interactive
+npm run build-interactive
 ```
 
 由于目前 package 比较多，也可以通过直接指定 package 名字来执行
@@ -41,7 +41,7 @@ tnpm run build-interactive
 package 名字就是目录名
 
 ```shell
-tnpm run build -- core
+npm run build -- core
 ```
 
 ## 开发
@@ -49,7 +49,7 @@ tnpm run build -- core
 想实时 watch 对应的库的构建，请使用以下命令，并根据列表来选择
 
 ```shell
-tnpm run dev-interactive
+npm run dev-interactive
 ```
 
 由于目前 package 比较多，也可以通过直接指定 package 名字来执行
@@ -57,17 +57,17 @@ tnpm run dev-interactive
 package 名字就是目录名
 
 ```shell
-tnpm run dev -- core
+npm run dev -- core
 ```
 
-如果需要测试 `cli` 相关的功能，可以在 `cli` 目录中 `tnpm link` 一下，采用本地版本的 cli
+如果需要测试 `cli` 相关的功能，可以在 `cli` 目录中 `npm link` 一下，采用本地版本的 cli
 
 `example` 涵盖了 `mor` 的绝大数功能的配置，可以在 `example` 中执行对应的命令 `mor ${command}` 即可
 
 ## 测试
 
 ```shell
-tnpm run test
+npm run test
 ```
 
 ## 如何向 `mor` 提交代码
@@ -85,7 +85,7 @@ tnpm run test
 
 其余未列出情况，可参考上述命名方式。
 
-完成代码提交后，需要在 <https://code.aone.alibaba-inc.com/mor/ali-mor> 中提交代码评审，评审的目标分支为评审分支创建时基于的分支。
+完成代码提交后，需要在 <https://github.com/mor/ali-mor> 中提交代码评审，评审的目标分支为评审分支创建时基于的分支。
 
 ### Commit 规范
 
@@ -182,7 +182,7 @@ Beta 版分支: `beta`
 开源版采用 `pnpm` 管理 `node_modules`，所有模块中**均不包含任何域内依赖，也请勿引入任何域内的依赖**
 仓库拉下来之后，通过如下命令初始化仓库：
 
-1. 安装 `pnpm`： `tnpm i pnpm -g` 如全局已有 `pnpm` 则可跳过该步骤
+1. 安装 `pnpm`： `npm i pnpm -g` 如全局已有 `pnpm` 则可跳过该步骤
 2. 安装 `node_modules`： `pnpm i`
 3. 安装所有 `packages` 中的依赖并建立引用关系： `pnpm lerna bootstrap`
 4. 构建所有的 `packages`： `pnpm build`
@@ -224,9 +224,9 @@ Beta 版分支: `beta`
 
 ### 其他
 
-#### 1. 如何添加 `mor` 相关 `tnpm` 发布权限
+#### 1. 如何添加 `mor` 相关 `npm` 发布权限
 
-执行下方命令，并将 `new_npm_owner` 替换为真实的 `tnpm` 用户名
+执行下方命令，并将 `new_npm_owner` 替换为真实的 `npm` 用户名
 
 ```bash
 npm owner add new_npm_owner takin && \

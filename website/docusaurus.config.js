@@ -67,9 +67,7 @@ const config = {
       })
     ]
   ],
-  plugins: [
-    require.resolve('./plugins/redirect.js'),
-  ]
+  plugins: []
 }
 
 // algolia 是在线搜索服务，内网环境下不可用，替换为搜索插件

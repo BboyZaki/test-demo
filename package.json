@@ -1,22 +1,18 @@
 {
-  "name": "test-demo",
+  "name": "mor-miniprogram-wechat-ts-less-starter",
   "version": "1.0.0",
-  "description": "a project for test everything",
-  "main": "index.js",
+  "description": "",
   "scripts": {
-    "docs:deps": "cd website && npm install",
-    "docs:start": "cd website && npm start",
-    "docs:build": "cd website && npm build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BboyZaki/test-demo.git"
+    "dev": "mor compile --watch",
+    "compile": "mor compile --production"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BboyZaki/test-demo/issues"
+  "license": "",
+  "dependencies": {
+    "@ali/openmor-core": "*"
   },
-  "homepage": "https://github.com/BboyZaki/test-demo#readme"
+  "devDependencies": {
+    "@ali/openmor-cli": "*"
+  }
 }

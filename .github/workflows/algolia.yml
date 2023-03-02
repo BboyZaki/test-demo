@@ -8,12 +8,26 @@ on:
 
 jobs:
   build-and-deploy:
+    # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      # 拉取代码
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+
+      - name: Install pnpm
+        run: npm i pnpm -g
+
       - name: Get the content of algolia.json as config
         id: algolia_config
         run: echo "::set-output name=config::$(cat algolia.json | jq -r tostring)"
+
       - name: Push indices to Algolia
         uses: signcl/docsearch-scraper-action@master
         env:

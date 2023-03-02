@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:

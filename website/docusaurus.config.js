@@ -30,9 +30,12 @@ const config = {
     // },
     // algolia 搜索配置
     algolia: {
-      appId: '5QPTLJ7YVR',
-      apiKey: 'aa95c48f32ccd4dd1788b1d279a98397',
-      indexName: 'morjs'
+      // appId: '5QPTLJ7YVR',
+      // apiKey: 'aa95c48f32ccd4dd1788b1d279a98397',
+      // indexName: 'morjs'
+      appId: '29J7LVLPZ4',
+      apiKey: 'e42959d52df62a24da8755e35ebec6b8',
+      indexName: 'mor-site'
     }
   },
   presets: [

@@ -1,4 +1,13 @@
-algolia:
+name: Build Algolia
+on:
+  push:
+    paths:
+      - 'website/**'
+    branches:
+      - main
+
+jobs:
+  algolia:
     needs: deploy
     runs-on: ubuntu-latest
     steps:

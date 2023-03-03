@@ -1,6 +1,9 @@
 {
   "index_name": "mor-site",
   "start_urls": ["https://pre-mor.alibaba-inc.com/"],
+  "stop_urls": [],
+  "sitemap_urls": ["https://pre-mor.alibaba-inc.com/sitemap.xml"],
+  "sitemap_alternate_links": true,
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {

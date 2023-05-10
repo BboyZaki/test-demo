@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "微信转端 wx",
-  "authors": [
-    "Felix Liu <lyfeyaj@gmail.com> (https://github.com/lyfeyaj)"
-  ],
+  "author": "BboyZaki<1512438313@qq.com> (https://github.com/BboyZaki)",
   "homepage": "",
   "license": "ISC",
   "repository": "git@github.com:eleme/morjs.git",
@@ -13,7 +11,7 @@
     "dev": "mor compile -w",
     "dev:ali": "mor compile --name ali",
     "dev:wx": "mor compile --name wx",
-    "build": "mor compile"
+    "build": "mor compile --production"
   },
   "dependencies": {
     "@morjs/core": "*"

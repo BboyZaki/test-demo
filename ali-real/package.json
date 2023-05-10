@@ -1,0 +1,13 @@
+{
+  "name": "mor-ali-sample",
+  "version": "1.0.0",
+  "private": true,
+  "description": "支付宝原生小程序",
+  "author": "BboyZaki<1512438313@qq.com> (https://github.com/BboyZaki)",
+  "homepage": "",
+  "license": "ISC",
+  "repository": "",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

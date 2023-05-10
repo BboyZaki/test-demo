@@ -1,0 +1,13 @@
+{
+  "name": "mor-wx-sample",
+  "version": "1.0.0",
+  "private": true,
+  "description": "微信原生小程序",
+  "author": "BboyZaki<1512438313@qq.com> (https://github.com/BboyZaki)",
+  "homepage": "",
+  "license": "ISC",
+  "repository": "",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

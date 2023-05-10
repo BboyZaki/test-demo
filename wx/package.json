@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "@morjs/cli": "*"
+  },
+  "tnpm": {
+    "mode": "yarn"
   }
 }

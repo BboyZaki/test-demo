@@ -4,9 +4,8 @@
     "pages/user/index"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "ali DSL",
-    "navigationBarBackgroundColor": "#000"
+    "defaultTitle": "ali DSL",
+    "titleBarColor": "#000"
   },
   "networkTimeout": {
     "request": 10000,

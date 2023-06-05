@@ -1,0 +1,25 @@
+{
+  "name": "mor-ali-sample",
+  "version": "1.0.0",
+  "private": true,
+  "description": "支付宝转端 ali",
+  "author": "BboyZaki<1512438313@qq.com> (https://github.com/BboyZaki)",
+  "homepage": "",
+  "license": "ISC",
+  "repository": "git@github.com:eleme/morjs.git",
+  "scripts": {
+    "dev": "mor compile -w",
+    "dev:ali": "mor compile --name ali",
+    "mock:ali": "mor compile --name ali --mock",
+    "build": "mor compile --production"
+  },
+  "dependencies": {
+    "@morjs/core": "*"
+  },
+  "devDependencies": {
+    "@morjs/cli": "*"
+  },
+  "tnpm": {
+    "mode": "yarn"
+  }
+}
